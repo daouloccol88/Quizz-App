@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Quizz App</title>
+</head>
+<body class="bg-secondary">
+  <div class="container">
+    <div class="row pt-5 pb-3">
+      <div class="col">
+        <div class="d-flex justify-content-between ">
+          <div><p>Category: <span id="category"></span></p></div>
+          <div><p>Difficulty: <span id="difficulty"></span></p></div>
+          <div>
+            <p> <span id="good"></span> <span id="bad"></span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pb-3">
+      <div class="col">
+        <p id="question" class="text-center"></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6"><p class="text-center"><button class="btn btn-block btn-light" id="answer1"></button></p></div>
+      <div class="col-6"><p class="text-center"><button class="btn btn-block btn-light" id="answer2"></button></p></div>
+    </div>
+    <div class="row">
+      <div class="col-6"><p class="text-center"><button class="btn btn-block btn-light" id="answer3"></button></p></div>
+      <div class="col-6"><p class="text-center"><button class="btn btn-block btn-light" id="answer4"></button></p></div>
+    </div>
+    <div class="row pt-5 pb-3">
+      <div class="col">
+        <div class="d-flex justify-content-between">
+          <div id="pop"><button class="btn btn-primary" id="next-btn">Next</button></div>
+          <div><button class="btn  btn-danger" id="restart">Clear Results</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
